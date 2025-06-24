@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZONE24uzz</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="circular_24.png">
+</head>
+<body>
+  <header>
+     <h1><a href="EyeZone.html" id="eyezone-logo">EyeZone</a></h1>
+     <h1><a href="CaseZone.html" id="logo">CaseZone</a></h1>
+    <h1 id="watcheszone"><a href="WatchesZone.html">WatchesZone</a></h1>
+    <div id="cart">
+      <button onclick="toggleCart()">Корзина <span id="cart-count">0</span> товаров</button>
+    </div>
+  </header>
+  
+  <main>
+    <section class="products">
+      <div class="product">
+        <img src="photo_2025-06-22_22-52-45.jpg" alt="Product 1">
+        <h3>Loewe</h3>
+        <p>Цена: 790.000 UZS</p>
+        <button onclick="addToCart('Loewe', 179000)">Добавить в корзину</button>
+      </div>
+      <div class="product">
+        <img src="PUMA2.jpg" alt="Product 2">
+        <h3>Puma и Adidas Samba</h3>
+        <p>Цена: 219.000 UZS</p>
+        <button onclick="addToCart('PUMA и Adidas Samba', 219000)">Добавить в корзину</button>
+      </div>
+      <div class="product">
+        <img src="Barsetka.jpg" alt="Product 3">
+        <h3>Барсетка мужская</h3>
+        <p>Цена: 179.000 UZS</p>
+        <button onclick="addToCart('Барсетка мужская', 179000)">Добавить в корзину</button>
+      </div>
+      <div class="product">
+        <img src="Loro Piano.jpg" alt="Product 4">
+        <h3>Loro Piano</h3>
+        <p>Цена: 400.000 UZS</p>
+        <button onclick="addToCart('Loro Piano', 400000)">Добавить в корзину</button>
+      </div>
+      <div class="product">
+        <img src="Kepka Loro Piano.jpg" alt="Product 5">
+        <h3>Кепка US and Polo</h3>
+        <p>Цена: 179.000 UZS</p>
+        <button onclick="addToCart('Кепка Loro Piano', 179000)">Добавить в корзину</button>
+      </div>
+      <div class="product">
+        <img src="FENDI.jpg" alt="Product 6">
+        <h3>FENDI</h3>
+        <h5>Размер 41 42</h5>
+        <p>Цена: 310.000 UZS</p>
+        <button onclick="addToCart('FENDI', 310000)">Добавить в корзину</button>
+      </div>
+       <div class="product">
+        <img src="LEN.jpg" alt="Product 3">
+        <h3>Len Брюки белые</h3>
+        <p>Цена: 165.000 UZS</p>
+        <button onclick="addToCart('Len Брюки белые', 165000)">Добавить в корзину</button>
+      </div>
+       <div class="product">
+        <img src="Valentino.jpg" alt="Product 3">
+        <h3>Valentino</h3>
+        <p>Цена: 900.000 UZS</p>
+        <button onclick="addToCart('Барсетка мужская', 900000)">Добавить в корзину</button>
+      </div>
+     <div class="product">
+        <img src="DOLCE and GABANA.jpg" alt="Product 5">
+        <h3>Dolce Gabana тапочки</h3>
+        <p>Цена: 670.000 UZS</p>
+        <button onclick="addToCart('Кепка Loro Piano', 670000)">Добавить в корзину</button>
+      </div>
+      <div class="product">
+        <img src="Финка1.jpg" alt="Product 3">
+        <h3>Финка Ами и Монслер</h3>
+        <h5>Размер: M L XL</h5>
+        <p>Цена: 270.000 UZS</p>
+        <button onclick="addToCart('Барсетка мужская', 270000)">Добавить в корзину</button>
+      </div>
+            </div>
+      <div class="product">
+        <img src="Loro Piano4.jpg" alt="Product 3">
+        <h3>Loro Piano</h3>
+        <h5>Размер: 40</h5>
+        <p>Цена: 380.000 UZS</p>
+        <button onclick="addToCart('Loro Piano Orange', 380000)">Добавить в корзину</button>
+      </div>
+      <div class="product">
+        <img src="Барсетка2.jpg" alt="Product 3">
+        <h3>Гаярд барсетка</h3>
+        <p>Цена: 339.000 UZS</p>
+        <button onclick="addToCart('Gayard Barsetka', 339000)">Добавить в корзину</button>
+      </div>
+      <div class="product">
+        <img src="Sport Sumka.jpg" alt="Product 3">
+        <h3>Гаярд Спортивная мумка</h3>
+        <p>Цена: 390.000 UZS</p>
+        <button onclick="addToCart('Sport Sumka Gayard', 390000)">Добавить в корзину</button>
+      </div>
+      <div class="product">
+        <img src="PAPKA.jpg" alt="Product 3">
+        <h3>Гоярд Папка</h3>
+        <p>Цена: 397.000 UZS</p>
+        <button onclick="addToCart('Goyard PAPKA', 397000)">Добавить в корзину</button>
+      </div>
+      <div class="product">
+        <img src="Jeans.jpg" alt="Product 3">
+        <h3>Dime Jeans</h3>
+        <h5>Размер: S-M</h5>
+        <p>Цена: 340.000 UZS</p>
+        <button onclick="addToCart('Dime Jeans', 340000)">Добавить в корзину</button>
+      </div>
+      <div class="product">
+        <img src="Goyard.jpg" alt="Product 3">
+        <h3>Goyard Clutch</h3>
+        <h5>Размер: L</h5>
+        <p>Цена: 200.000 UZS</p>
+        <button onclick="addToCart('Dime Jeans', 200000)">Добавить в корзину</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+      <h2>Корзина</h2>
+      <ul id="cart-items">
+        <!-- Товары корзины будут отображаться здесь -->
+      </ul>
+      <p>Общая сумма: <span id="total-price">0</span> UZS</p>
+      <button onclick="clearCart()">Очистить корзину</button>
+      <button onclick="closeCart()">Закрыть</button>
+      <a href="https://t.me/rkhmnv712"><button>Оформить товары</button></a>
+    </div>
+  </div>
+ <footer>ZONE24uzz Все права защищены</footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+  font-size: 26px;
+  letter-spacing: 1px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#logo:hover {
+  color: #ff6600;
+}
+
+#cart button {
+  background-color: #ff6600;
+  border: none;
+  color: white;
+  padding: 12px 18px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+#cart button:hover {
+  background-color: #e65c00;
+}
+
+main {
+  padding: 30px 10%;
+}
+
+.products {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product img:hover {
+  transform: scale(1.05);
+}
+
+.product h3 {
+  font-size: 20px;
+  color: #333;
+  margin: 15px 0;
+}
+
+.product p {
+  font-size: 16px;
+  color: #777;
+}
+
+.product button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.product button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.cart-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.cart-content {
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 350px;
+  max-width: 90%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cart-content h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cart-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.cart-content ul li {
+  margin-bottom: 12px;
+}
+
+.cart-content p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cart-content button {
+  background-color: #ff6600;
+  color: white;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.cart-content button:hover {
+  background-color: #e65c00;
+}
+
+#eyezone-logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+#eyezone-logo:hover {
+  color: #ff6600; /* Add a hover effect, like changing color */
+}
+
+#watcheszone {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  transition: color 0.3s ease;
+}
+
+#watcheszone a {
+  color: inherit; /* Ссылка унаследует цвет родительского элемента */
+  text-decoration: none; /* Убираем подчеркивание */
+  transition: color 0.3s ease; /* Плавное изменение цвета */
+}
+
+#watcheszone:hover {
+  color: #ff6600; /* Цвет при наведении */
+}
+
+#watcheszone a:hover {
+  color: #ff6600; /* Цвет при наведении на ссылку */
+}
+
+footer {
+  background-color: #333; /* Темный фон */
+  color: white; /* Белый текст */
+  text-align: center; /* Выравнивание текста по центру */
+  padding: 20px; /* Отступы для красивого размещения */
+  font-size: 14px; /* Размер шрифта */
+  letter-spacing: 1px; /* Расстояние между буквами */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Легкая тень сверху */
+  margin-top: 30px; /* Отступ сверху */
+}
+
+footer a {
+  color: #ff6600; /* Цвет для ссылок, если они будут */
+  text-decoration: none; /* Убираем подчеркивание */
+  transition: color 0.3s ease; /* Плавное изменение цвета при наведении */
+}
+
+footer a:hover {
+  color: #e65c00; /* Цвет при наведении на ссылку */
+}
+
+footer button {
+  background-color: #ff6600; /* Оранжевый фон */
+  border: none; /* Убираем рамку */
+  color: white; /* Белый текст */
+  padding: 10px 20px; /* Отступы внутри кнопки */
+  font-size: 14px; /* Размер шрифта */
+  border-radius: 25px; /* Скругленные углы */
+  cursor: pointer; /* Курсор в виде указателя */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Плавный переход фона и эффекта масштаба */
+}
+
+footer button:hover {
+  background-color: #e65c00; /* Темный оранжевый при наведении */
+  transform: scale(1.05); /* Легкое увеличение кнопки */
+}
+
+footer button a {
+  color: white; /* Белый текст в ссылке внутри кнопки */
+  text-decoration: none; /* Убираем подчеркивание */
+}

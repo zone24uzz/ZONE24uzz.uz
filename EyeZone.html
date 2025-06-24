@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZONE24uzz</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="circular_24.png">
+</head>
+<body>
+  <header>
+     <h1><a href="test2.html" id="eyezone-logo">MAIN</a></h1>
+    <h1>ZONE24uzz</h1>
+    <div id="cart">
+      <button onclick="toggleCart()">Корзина <span id="cart-count">0</span> товаров</button>
+    </div>
+  </header>
+  
+  <main>
+    <section class="products">
+      <div class="product">
+        <img src="OCHKI.jpg" alt="Product 3">
+        <h3>Очки</h3>
+        <p>Цена: 99.000 UZS</p>
+        <button onclick="addToCart('Очки', 99000)">Добавить в корзину</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+      <h2>Корзина</h2>
+      <ul id="cart-items">
+        <!-- Товары корзины будут отображаться здесь -->
+      </ul>
+      <p>Общая сумма: <span id="total-price">0</span> UZS</p>
+      <button onclick="clearCart()">Очистить корзину</button>
+      <button onclick="closeCart()">Закрыть</button>
+      <a href="https://t.me/rkhmnv712"><button>Оформить товары</button></a>
+    </div>
+  </div>
+        <footer>ZONE24uzz Все права защищены</footer>
+  <script src="script.js"></script>
+</body>
+</html>
