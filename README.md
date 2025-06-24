@@ -1,2 +1,2 @@
-# ZONE24uzz.uz
+# ZONE24uzz
 ZONE24uzz
